@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/hassanmoaa/four-card-feature-FrontEndMentor.git)
+- Live Site URL: (https://elegant-pothos-39c0b2.netlify.app)
 
 ### Built with
 
