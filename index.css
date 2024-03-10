@@ -1,0 +1,189 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* ABBR DECORATION */
+abbr {
+	text-decoration: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Make images easier to work with */
+svg,
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+:root {
+	/*--PRIMARY--*/
+	--Red: hsl(0, 78%, 62%);
+	--Cyan: hsl(180, 62%, 55%);
+	--Orange: hsl(34, 97%, 64%);
+	--Blue: hsl(212, 86%, 64%);
+
+	/*--NEUTRAL--*/
+	--Very-Dark-Blue: hsl(234, 12%, 34%);
+	--Grayish-Blue: hsl(229, 6%, 66%);
+	--Very-Light-Gray: hsl(0, 0%, 98%);
+
+	/*--Font-Weight--*/
+	--regular-fw: 200;
+	--medium-fw: 400;
+	--bold-fw: 600;
+
+	/*--Font-Size--*/
+	--fs-08: 0.8rem;
+	--fs-1: 1rem;
+	--fs-125: 1.25rem;
+	--fs-15: 1.5rem;
+	--fs-175: 1.75rem;
+	--fs-2: 2rem;
+	--fs-225: 2.25rem;
+	--fs-25: 2.5rem;
+	--fs-275: 2.75rem;
+	--fs-300: 3rem;
+}
+
+body {
+	background-color: var(--Very-Light-Gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	padding: 2rem;
+}
+.header {
+	color: var(--Very-Dark-Blue);
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.header > * {
+	padding-block: 0.5rem;
+}
+span {
+	color: var(--Very-Dark-Blue);
+	font-weight: var(--regular-fw);
+}
+p {
+	color: var(--Grayish-Blue);
+}
+
+.grid {
+	display: grid;
+	justify-items: center;
+	gap: 2rem;
+}
+.grid-item {
+	max-width: 22.5rem;
+	background-color: white;
+	padding: 1.5rem;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 0 var(--Grayish-Blue);
+}
+.grid-item1 {
+	border-top: 4px solid var(--Cyan);
+}
+.grid-item2 {
+	border-top: 4px solid var(--Red);
+}
+.col > * {
+	margin-bottom: 3rem;
+}
+.grid-item3 {
+	border-top: 4px solid var(--Orange);
+}
+.grid-item4 {
+	border-top: 4px solid var(--Blue);
+}
+
+h2 {
+	font-size: var(--fs-125);
+}
+.grid-item p {
+	font-size: 0.875rem;
+	margin-bottom: 1.5rem;
+}
+
+.img {
+	display: flex;
+	align-items: flex-end;
+	justify-content: right;
+}
+
+@media (min-width: 46.875rem) {
+	.grid {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+	.col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+}
